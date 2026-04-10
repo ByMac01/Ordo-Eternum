@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>??? Kurokage † - Ordo Eternum</title>
+  <link
+      rel="icon"
+      href="https://cdn.glitch.global/dea70241-0383-42e2-8503-bf393bd23b59/2.png?v=1734398832208"
+      type="image/x-icon"
+    />
+  <link rel="stylesheet" href="personagem.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+  <section class="pagina-personagem">
+
+    <!-- CITAÇÃO -->
+    <blockquote class="citacao">
+      <i class="fas fa-quote-left"></i> “Na escuridão, todos os olhos se fecham. É lá que eu vejo com mais clareza.” <i class="fas fa-quote-right"></i>
+    </blockquote>
+
+    <div class="container-topo">
+        <div class="imagem-box">
+          <button class="btn-esq" onclick="mudarImagem(-1)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <img
+            class="imagem-personagem"
+            id="carrosselImagem"
+            src="https://cdn.glitch.global/dea70241-0383-42e2-8503-bf393bd23b59/imagem_2025-02-01_225530663.png?v=1738461331641"
+            alt="Retrato de Kurokage"
+          />
+          <button class="btn-dir" onclick="mudarImagem(1)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      <div class="dados-basicos">
+        <h1><i class="fas fa-user"></i> ??? Kurokage †</h1>
+        <p><i class="fas fa-user"></i> <strong>Interpretado por:</strong> Reginaldo</p>
+        <p><i class="fas fa-star"></i> <strong>Nascimento:</strong> ??/??/????</p>
+        <p><i class="fas fa-ghost"></i> <strong>Morte:</strong> 08/05/1665</p>
+        <p><i class="fas fa-hourglass-half"></i> <strong>Idade na morte:</strong> ??</p>
+      </div>
+    </div>
+
+    <!-- DESCRIÇÃO -->
+    <div class="descricao-personagem">
+      <h2><i class="fas fa-book-open"></i> Biografia</h2>
+      <p>
+        A ex-líder do culto Noctis.
+      </p>
+
+      <h2><i class="fas fa-users"></i> Relações</h2>
+      <ul>
+        <li><strong>Noctis:</strong> Seu ex-culto</li>
+      </ul>
+
+      <h2><i class="fas fa-star"></i> Curiosidades</h2>
+      <ul>
+        <li>???</li>
+      </ul>
+
+      <h2><i class="fas fa-video"></i> Aparições:</h2>
+      <ul>
+        <li><strong>Temporada 2:</strong> Sombras do Passado</li>
+      </ul>
+    </div>
+  </section>
+  <div class="back-to-home" data-aos="fade-up">
+        <a href="../index.html" class="btn"><i class="fas fa-home"></i> Voltar ao Início</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 - 2025 Ordo Eternum. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+  <script>
+  const imagens = [
+    'https://cdn.glitch.global/dea70241-0383-42e2-8503-bf393bd23b59/imagem_2025-02-01_225530663.png?v=1738461331641'
+  ];
+  let indiceAtual = 0;
+  const imagemElement = document.getElementById('carrosselImagem');
+
+  function mudarImagem(direcao) {
+    indiceAtual = (indiceAtual + direcao + imagens.length) % imagens.length;
+    imagemElement.src = imagens[indiceAtual];
+  }
+</script>
+</body>
+</html>

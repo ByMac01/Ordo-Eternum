@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>??? Kenta - Ordo Eternum</title>
+  <link
+      rel="icon"
+      href="https://cdn.glitch.global/dea70241-0383-42e2-8503-bf393bd23b59/2.png?v=1734398832208"
+      type="image/x-icon"
+    />
+  <link rel="stylesheet" href="personagem.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+  <section class="pagina-personagem">
+
+    <!-- CITAÇÃO -->
+    <blockquote class="citacao">
+      <i class="fas fa-quote-left"></i> “Se eu cair, que seja protegendo quem ainda pode se levantar.” <i class="fas fa-quote-right"></i>
+    </blockquote>
+
+    <div class="container-topo">
+        <div class="imagem-box">
+          <button class="btn-esq" onclick="mudarImagem(-1)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <img
+            class="imagem-personagem"
+            id="carrosselImagem"
+            src="https://cdn.glitch.global/dea70241-0383-42e2-8503-bf393bd23b59/imagem_2025-02-01_225832538.png?v=1738461513672"
+            alt="Retrato de ??? Kenta"
+          />
+          <button class="btn-dir" onclick="mudarImagem(1)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      <div class="dados-basicos">
+        <h1><i class="fas fa-user"></i> ??? Kenta</h1>
+        <p><i class="fas fa-dragon"></i> <strong>Classe:</strong> Combatente</p>
+        <p><i class="fas fa-fire"></i> <strong>Origem:</strong> Lutador</p>
+        <p><i class="fas fa-star"></i> <strong>Nascimento:</strong> ??/??/????</p>
+        <p><i class="fas fa-hourglass-half"></i> <strong>Idade:</strong> ???</p>
+        <p><i class="fas fa-user"></i> <strong>Interpretado por:</strong> Reginaldo</p>
+      </div>
+    </div>
+
+    <!-- ATRIBUTOS -->
+    <div class="atributos">
+      <h2><i class="fas fa-dumbbell"></i> Atributos</h2>
+      <ul>
+        <li><i class="fas fa-hand-fist"></i> <strong>Força:</strong> 3</li>
+        <li><i class="fas fa-bolt"></i> <strong>Agilidade:</strong> 2</li>
+        <li><i class="fas fa-heartbeat"></i> <strong>Vigor:</strong> 2</li>
+        <li><i class="fas fa-brain"></i> <strong>Intelecto:</strong> 2</li>
+        <li><i class="fas fa-comments"></i> <strong>Presença:</strong> 1</li>
+      </ul>
+    </div>
+    
+    <!-- DESCRIÇÃO -->
+    <div class="descricao-personagem">
+      <h2><i class="fas fa-book-open"></i> Biografia</h2>
+      <p>
+        ???
+      </p>
+
+      <h2><i class="fas fa-users"></i> Relações</h2>
+      <ul>
+        <li><strong>Aiko:</strong> Líder</li>
+        <li><strong>Agentes da Organização:</strong> Colegas</li>
+      </ul>
+
+      <h2><i class="fas fa-star"></i> Curiosidades</h2>
+      <ul>
+        <li>???.</li>
+      </ul>
+
+      <h2><i class="fas fa-video"></i> Aparições:</h2>
+      <ul>
+        <li><strong>Temporada 1:</strong> Todos pelo Ideal</li>
+      </ul>
+    </div>
+  </section>
+  <div class="back-to-home" data-aos="fade-up">
+        <a href="../index.html" class="btn"><i class="fas fa-home"></i> Voltar ao Início</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 - 2025 Ordo Eternum. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+  <script>
+  const imagens = [
+    'https://cdn.glitch.global/dea70241-0383-42e2-8503-bf393bd23b59/imagem_2025-02-01_225832538.png?v=1738461513672'
+  ];
+  let indiceAtual = 0;
+  const imagemElement = document.getElementById('carrosselImagem');
+
+  function mudarImagem(direcao) {
+    indiceAtual = (indiceAtual + direcao + imagens.length) % imagens.length;
+    imagemElement.src = imagens[indiceAtual];
+  }
+</script>
+</body>
+</html>

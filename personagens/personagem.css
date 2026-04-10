@@ -1,0 +1,174 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.pagina-personagem {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.citacao {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 30px;
+  border-left: 4px solid #555;
+  padding-left: 15px;
+}
+
+.container-topo {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.imagem-personagem {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+.imagem-box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+.imagem-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #111; /* opcional: fundo escuro atrás da imagem */
+}
+.imagem-box button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 10;
+}
+.imagem-box button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.btn-esq {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+.btn-dir {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+.marca-personagem {
+  display: block;
+  margin: 20px auto 0 auto; /* centraliza horizontalmente */
+  width: 200px; /* aumenta o tamanho */
+  height: auto;
+  filter: invert(1);
+  opacity: 0.9;
+}
+.dados-basicos {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  flex: 1;
+  min-width: 250px;
+  position: relative;
+}
+
+.dados-basicos h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.dados-basicos p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.atributos {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  margin-bottom: 30px;
+}
+
+.atributos h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.atributos ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.atributos li {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.descricao-personagem h2 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 6px;
+}
+
+.descricao-personagem p,
+.descricao-personagem ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.descricao-personagem ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 4rem;
+}
+
+/* Botão Voltar */
+.back-to-home {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn {
+  background: #ffffff;
+  color: #000000 !important;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
